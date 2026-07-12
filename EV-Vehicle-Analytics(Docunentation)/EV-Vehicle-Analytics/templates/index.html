@@ -1,0 +1,965 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- ==========================================
+                HERO SECTION
+=========================================== -->
+
+<section class="hero fade-up">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left Content -->
+
+            <div class="col-lg-6 hero-left fade-up">
+
+                <span class="badge bg-primary px-3 py-2 mb-3">
+
+                    ⚡ Smart EV Analytics Platform
+
+                </span>
+
+                <h1>
+
+                    Electric Vehicle
+                    Charge & Range
+                    Analysis Platform
+
+                </h1>
+
+                <p>
+
+                    Explore interactive dashboards, charging insights,
+                    battery performance and EV trends using
+                    <strong>Flask</strong>,
+                    <strong>Tableau</strong>
+                    and
+                    <strong>MySQL</strong>.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="/dashboard"
+                       class="btn btn-primary btn-lg me-3">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        Explore Dashboard
+
+                    </a>
+
+                    <a href="/about"
+                       class="btn btn-outline-primary btn-lg">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+
+            <div class="col-lg-6 text-center fade-up">
+
+                <img src="{{ url_for('static', filename='images/hero.png') }}"
+
+                     class="hero-img img-fluid"
+
+                     alt="EV Analytics">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                STATISTICS
+=========================================== -->
+
+<section class="py-5 bg-white fade-up">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-solid fa-car-side fa-3x text-primary mb-3"></i>
+
+<h3 class="counter" data-target="40">0</h3>
+
+<p>
+
+Electric Vehicle Brands
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-solid fa-bolt fa-3x text-warning mb-3"></i>
+
+<h3 class="counter" data-target="100">0</h3>
+
+<p>
+
+EV Models Analysed
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-solid fa-charging-station fa-3x text-success mb-3"></i>
+
+<h3 class="counter" data-target="500">0</h3>
+
+<p>
+
+Charging Stations
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-solid fa-chart-column fa-3x text-danger mb-3"></i>
+
+<h3 class="counter" data-target="4">0</h3>
+
+<p>
+
+Interactive Dashboards
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+            PROJECT OVERVIEW
+=========================================== -->
+
+<section class="about-section fade-up">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<img src="{{ url_for('static', filename='images/about.png') }}"
+
+class="about-image img-fluid"
+
+alt="About EV Analytics">
+
+</div>
+
+<div class="col-lg-6">
+
+<h2 class="about-title">
+
+Why EV Analytics?
+
+</h2>
+
+<p class="about-text">
+
+Electric Vehicles are transforming the transportation industry.
+Understanding charging behaviour,
+battery performance,
+driving range,
+and efficiency is essential for making better decisions.
+
+</p>
+
+<p class="about-text">
+
+Our EV Analytics platform integrates
+<strong>MySQL</strong>,
+<strong>Tableau</strong>,
+and
+<strong>Flask</strong>
+to deliver interactive visualizations that help users explore EV trends with ease.
+
+</p>
+
+<a href="/about"
+
+class="btn btn-primary">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+                FEATURES SECTION
+=========================================== -->
+
+<section class="py-5 bg-light fade-up">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Powerful Features
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                Discover how EV Analytics helps users analyze electric vehicle
+                performance through interactive visualizations.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-chart-line fa-3x text-primary mb-4"></i>
+
+                    <h4>Interactive Dashboard</h4>
+
+                    <p>
+
+                        Explore Tableau dashboards with KPIs,
+                        filters,
+                        maps,
+                        and advanced visual analytics.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-battery-full fa-3x text-success mb-4"></i>
+
+                    <h4>Battery Analysis</h4>
+
+                    <p>
+
+                        Compare battery capacity,
+                        charging speed,
+                        efficiency,
+                        and driving range across EV models.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-charging-station fa-3x text-warning mb-4"></i>
+
+                    <h4>Charging Insights</h4>
+
+                    <p>
+
+                        Analyze charging stations,
+                        charging power,
+                        connector types,
+                        and charging patterns.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-earth-asia fa-3x text-danger mb-4"></i>
+
+                    <h4>Sustainable Future</h4>
+
+                    <p>
+
+                        Promote sustainable transportation
+                        through data-driven EV insights
+                        and environmental awareness.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                WHY CHOOSE US
+=========================================== -->
+
+<section class="py-5 fade-up">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h2 class="about-title">
+
+Why Choose EV Analytics?
+
+</h2>
+
+<p class="about-text">
+
+EV Analytics combines Business Intelligence,
+Database Management,
+and Web Technologies into one powerful platform.
+
+Our solution enables users to analyze electric vehicle
+charging behaviour,
+battery performance,
+range,
+and efficiency through interactive dashboards.
+
+</p>
+
+<div class="row mt-4">
+
+<div class="col-md-6 mb-4">
+
+<div class="feature-card text-center fade-up">
+
+<i class="fa-solid fa-database fa-2x text-primary mb-3"></i>
+
+<h5>
+
+MySQL Database
+
+</h5>
+
+<p>
+
+Efficient storage and management of EV datasets.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<div class="feature-card text-center fade-up">
+
+<i class="fa-solid fa-chart-pie fa-2x text-success mb-3"></i>
+
+<h5>
+
+Tableau Dashboards
+
+</h5>
+
+<p>
+
+Interactive visualizations for EV insights.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<div class="feature-card text-center fade-up">
+
+<i class="fa-solid fa-code fa-2x text-warning mb-3"></i>
+
+<h5>
+
+Flask Integration
+
+</h5>
+
+<p>
+
+Modern responsive web application using Flask.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<div class="feature-card text-center fade-up">
+
+<i class="fa-solid fa-users fa-2x text-danger mb-3"></i>
+
+<h5>
+
+User Friendly
+
+</h5>
+
+<p>
+
+Simple,
+responsive,
+and easy-to-use interface.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 text-center fade-up">
+
+<img src="{{ url_for('static', filename='images/feature.png') }}"
+
+class="img-fluid"
+
+style="max-width:90%;"
+
+alt="Features">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+                PROJECT HIGHLIGHTS
+=========================================== -->
+
+<section class="py-5 bg-light fade-up">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Project Highlights
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                EV Analytics combines Database Management,
+                Business Intelligence,
+                and Web Development to build a complete
+                Electric Vehicle analytics platform.
+
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 mb-4">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-database fa-3x text-primary mb-4"></i>
+
+                    <h4>
+
+                        MySQL Database
+
+                    </h4>
+
+                    <p>
+
+                        Stores Electric Vehicle datasets,
+                        charging information,
+                        battery specifications,
+                        and vehicle performance.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 mb-4">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-chart-simple fa-3x text-success mb-4"></i>
+
+                    <h4>
+
+                        Tableau Dashboards
+
+                    </h4>
+
+                    <p>
+
+                        Interactive dashboards and Tableau Stories
+                        provide visual insights into charging,
+                        range,
+                        battery performance,
+                        and EV trends.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 mb-4">
+
+                <div class="feature-card h-100 fade-up">
+
+                    <i class="fa-solid fa-laptop-code fa-3x text-warning mb-4"></i>
+
+                    <h4>
+
+                        Flask Integration
+
+                    </h4>
+
+                    <p>
+
+                        Flask integrates Tableau dashboards
+                        into a responsive web application
+                        for a smooth user experience.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                CALL TO ACTION
+=========================================== -->
+
+<section class="py-5 fade-up">
+
+    <div class="container">
+
+        <div class="glass-card p-5 text-center">
+
+            <h2 class="mb-4">
+
+                Ready to Explore EV Analytics?
+
+            </h2>
+
+            <p class="mb-4">
+
+                Explore interactive dashboards,
+                charging insights,
+                battery analysis,
+                and electric vehicle performance
+                through our Tableau-powered analytics platform.
+
+            </p>
+
+            <a href="/dashboard"
+
+               class="btn btn-primary btn-lg me-3">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                Explore Dashboard
+
+            </a>
+
+            <a href="/story"
+
+               class="btn btn-outline-primary btn-lg">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                View Story
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                TECHNOLOGIES USED
+=========================================== -->
+
+<section class="py-5 bg-white fade-up">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Technologies Used
+
+</h2>
+
+<p class="section-subtitle">
+
+Modern technologies powering EV Analytics.
+
+</p>
+
+</div>
+
+<div class="row text-center">
+
+<div class="col-md-3 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-solid fa-database fa-3x text-primary mb-3"></i>
+
+<h5>
+
+MySQL
+
+</h5>
+
+<p>
+
+Database Management
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-solid fa-chart-pie fa-3x text-success mb-3"></i>
+
+<h5>
+
+Tableau
+
+</h5>
+
+<p>
+
+Business Intelligence
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-brands fa-python fa-3x text-warning mb-3"></i>
+
+<h5>
+
+Flask
+
+</h5>
+
+<p>
+
+Backend Framework
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3 mb-4">
+
+<div class="feature-card fade-up">
+
+<i class="fa-brands fa-bootstrap fa-3x text-info mb-3"></i>
+
+<h5>
+
+Bootstrap
+
+</h5>
+
+<p>
+
+Responsive UI
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+            WHY EV ANALYTICS
+=========================================== -->
+
+<section class="py-5 bg-light fade-up">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-success px-3 py-2 mb-3">
+
+                Why Our Platform?
+
+            </span>
+
+            <h2 class="section-title">
+
+                Experience Modern EV Analytics
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                EV Analytics combines Business Intelligence,
+                Database Management,
+                and Web Technologies to provide a modern
+                Electric Vehicle analysis platform.
+
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="feature-card text-center fade-up">
+
+                    <i class="fa-solid fa-gauge-high fa-3x text-primary mb-4"></i>
+
+                    <h4>
+
+                        Fast Analysis
+
+                    </h4>
+
+                    <p>
+
+                        Explore EV datasets instantly through
+                        interactive dashboards.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="feature-card text-center fade-up">
+
+                    <i class="fa-solid fa-filter fa-3x text-success mb-4"></i>
+
+                    <h4>
+
+                        Smart Filters
+
+                    </h4>
+
+                    <p>
+
+                        Compare charging stations,
+                        battery capacity,
+                        vehicle range,
+                        and more.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="feature-card text-center fade-up">
+
+                    <i class="fa-solid fa-chart-line fa-3x text-warning mb-4"></i>
+
+                    <h4>
+
+                        Live Insights
+
+                    </h4>
+
+                    <p>
+
+                        Understand EV performance using
+                        professional Tableau visualizations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="feature-card text-center fade-up">
+
+                    <i class="fa-solid fa-leaf fa-3x text-success mb-4"></i>
+
+                    <h4>
+
+                        Sustainable Future
+
+                    </h4>
+
+                    <p>
+
+                        Promote eco-friendly transportation
+                        through data-driven insights.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            FINAL CTA
+=========================================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="glass-card p-5 text-center">
+
+            <h2>
+
+                Start Exploring Electric Vehicle Analytics Today
+
+            </h2>
+
+            <p class="mt-3 mb-4">
+
+                Analyze EV charging behaviour,
+                battery performance,
+                driving range,
+                and interactive dashboards
+                using our modern analytics platform.
+
+            </p>
+
+            <a href="/dashboard"
+
+               class="btn btn-primary btn-lg me-3">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                Explore Dashboard
+
+            </a>
+
+            <a href="/contact"
+
+               class="btn btn-outline-primary btn-lg">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
